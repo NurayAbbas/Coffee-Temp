@@ -1,0 +1,393 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+li {
+  list-style-type: none;
+}
+body {
+  width: 100%;
+  height: 200vh;
+}
+.bg-image {
+  position: relative;
+  background-image: url(assest/header-bg.jpg.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+/*#region header css */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 5.5rem;
+  background-color: rgba(20, 2, 0, 0.8);
+  z-index: 999;
+}
+
+.container {
+  max-width: 1140px;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.header-top {
+  display: flex;
+  justify-content: end;
+  color: #fff;
+  margin-top: 1rem;
+}
+img {
+  width: 8rem;
+  height: 2rem;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  margin-right: 2rem;
+}
+.nav-bar > ul {
+  display: flex;
+  width: 25rem;
+  justify-content: space-between;
+}
+.header-top p {
+  margin-right: 1.5rem;
+}
+.submenu {
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  background-color: #fff;
+  top: 60px;
+  transition: all 0.5s;
+  padding: 8px 0px;
+  padding-left: 15px;
+  width: 7rem;
+  height: 4rem;
+  box-shadow: 0px 5px 10px 1px #6d6d6d;
+}
+.nav-bar li:hover .submenu {
+  opacity: 1;
+  visibility: visible;
+  background-color: rgba(20, 2, 0, 0.8);
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  font-size: 16px;
+}
+.nav-bar li {
+  margin-bottom: 0.5rem;
+  transition: all 0.5s;
+}
+.nav-bar ul li a {
+  transition: 0.5s;
+}
+.nav-bar i {
+  font-size: 10px;
+}
+.submenu li a {
+  transition: all 0.5s;
+}
+.nav-bar ul li a:hover {
+  color: #b68834;
+  cursor: pointer;
+}
+
+.submenu li a:hover {
+  color: #b68834;
+  cursor: pointer;
+}
+/*#endregion */
+
+/*#region Main css */
+.service {
+  position: absolute;
+  top: 8rem;
+  left: 12rem;
+  color: #fff;
+}
+.service p {
+  font-weight: 600;
+}
+.service h1 {
+  font-size: 60px;
+  width: 34rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+input {
+  box-sizing: border-box;
+  height: 3rem;
+  width: 10rem;
+  border-radius: 25px;
+  transition: all 0.5s;
+}
+input:hover {
+  background-color: transparent;
+  color: #fff;
+  border-color: #fff;
+  cursor: pointer;
+}
+.overlay {
+  background-color: black;
+  width: 34.7rem;
+  height: 21.9rem;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  border-radius: 0.6rem;
+}
+.section {
+  background-image: url(assest/video-bg.jpg.webp);
+  width: 35rem;
+  height: 22rem;
+  background-repeat: no-repeat;
+}
+.section a {
+  position: relative;
+}
+.Process {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 5rem;
+}
+.content h4:first-child {
+  font-weight: 100;
+  color: #b68834;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.content h1 {
+  width: 17rem;
+  color: #222222;
+}
+.content p {
+  width: 18rem;
+  color: #777777;
+}
+.section a i {
+  position: absolute;
+  color: #babe45;
+  margin-top: 10rem;
+  margin-left: 16rem;
+  font-size: 3rem;
+  z-index: 999;
+}
+.bg-img {
+  background-image: url(assest/menu-bg.jpg.webp);
+  width: 100%;
+  height: 120vh;
+  margin-top: 5rem;
+  position: relative;
+}
+.text {
+  position: absolute;
+}
+.text h1 {
+  margin-left: 28rem;
+  margin-top: 8rem;
+  font-size: 2.5rem;
+}
+.text h4 {
+  color: #777777;
+  margin-left: 36rem;
+  margin-top: 1rem;
+  font-weight: 100;
+}
+.cards {
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #fff;
+  box-shadow: 0px 10px 30px 0px rgb(182 136 52 / 20%);
+  border-radius: 10px;
+  padding: 30px 30px;
+  margin-bottom: 30px;
+  width: 19rem;
+}
+.box div {
+  display: flex;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  width: 16rem;
+  justify-content: space-between;
+}
+.box div p:last-child {
+  color: #b68834;
+}
+.box > p {
+  margin-top: 1rem;
+  color: #777777;
+}
+.pics-section {
+  height: 120vh;
+}
+.title h1 {
+  margin-left: 28rem;
+  margin-top: 8rem;
+  font-size: 2.5rem;
+}
+.title h4 {
+  color: #777777;
+  margin-left: 36rem;
+  margin-top: 1rem;
+  font-weight: 100;
+}
+.grid-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.cards-container {
+  display: grid;
+
+  grid-template-rows: 1.1fr 0.5fr 1.4fr;
+  gap: 11px 40px;
+
+  grid-template-areas:
+    "item1 item3 item3"
+    "item2 item3 item3"
+    "item2 item4 item5";
+}
+
+.card-1 {
+  grid-area: item1;
+}
+.card-2 {
+  grid-area: item2;
+}
+.card-3 {
+  grid-area: item3;
+}
+.card-4 {
+  grid-area: item4;
+}
+.card-5 {
+  grid-area: item5;
+}
+.cards-container img {
+  height: 100%;
+  width: 100%;
+}
+.assessment {
+  height: 100vh;
+  background-color: #b68834;
+  margin-top: 12rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.headline {
+  color: #fff;
+}
+.headline h1 {
+  margin-top: 7rem;
+}
+.headline h4 {
+  margin-top: 1rem;
+  font-weight: 100;
+}
+.reviews {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5rem;
+  color: #fff;
+}
+
+.reviews img {
+  width: 5rem;
+  height: 3rem;
+  display: flex;
+}
+.left-part,
+.right-part {
+  width: 30%;
+  height: 40vh;
+}
+.heading {
+  margin-top: 1.5rem;
+  display: flex;
+}
+.heading .stars {
+  margin-left: 1rem;
+}
+.reviews p {
+  margin-top: 1rem;
+  line-height: 1.5;
+  width: 31rem;
+  text-align: justify;
+}
+.stars span:first-child {
+  color: orange;
+}
+.stars span:nth-child(2) {
+  color: orange;
+}
+.numbers {
+  display: flex;
+  justify-content: space-evenly;
+  color: #fff;
+}
+.numbers h1 {
+  font-size: 60px;
+  font-weight: 100;
+}
+.numbers p {
+  text-align: initial;
+  margin-top: 0.3rem;
+}
+/*#endregion */
+footer{height: 80vh;}
+.back-image{background-image:url(https://preview.colorlib.com/theme/coffee/img/footer-bg.jpg) ;
+width: 100%;
+height: 80vh; background-repeat: no-repeat;
+background-position: bottom;
+position: relative;}
+
+input{box-sizing: border-box;
+  height: 3rem;
+  width: 15rem;
+  transition: all 0.5s;
+}
+.about{display: flex;
+  justify-content: space-around;
+  height: 100%;
+  align-items: center;
+  color: white;}
+  .about div{line-height: 1.5;}
+  .about div:first-child {width: 20%;}
+  .about div:nth-child(2){margin-right: 10rem;}
+
+ 
